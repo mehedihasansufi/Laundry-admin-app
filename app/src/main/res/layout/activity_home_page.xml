@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_page"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Red background -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <!-- ======== Header Section ======== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <!-- Profile image -->
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Profile"
+                    android:src="@drawable/profile" />
+
+                <!-- Email text -->
+                <TextView
+                    android:id="@+id/for_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="user@example.com"
+                    android:textColor="#222222"
+                    android:textSize="16sp" />
+
+                <!-- Notification icon -->
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Notification"
+                    android:src="@drawable/notification" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                />
+
+            <LinearLayout
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+
+
+
+                <!--                box -->
+
+
+
+                <!-- 2 rows of 3 boxes -->
+                <!-- First row (already আছে) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <!-- Box 1 -->
+                    <LinearLayout
+                        android:id="@+id/ordered"
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/red_box"
+                        >
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ordered"
+                            android:textSize="19sp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#ffffff"
+
+                            />
+                    </LinearLayout>
+
+                    <!-- Box 2 -->
+                    <LinearLayout
+                        android:id="@+id/pending"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/yellow_box"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="In Progress"
+                            android:textSize="18sp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#ffffff"
+                            />
+                    </LinearLayout>
+
+                    <!-- Box 3 -->
+                    <LinearLayout
+                        android:id="@+id/delivery"
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/green_box"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery"
+                            android:textSize="18sp"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Bottom black bar -->
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="Icon 1"
+                android:scaleType="centerInside"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/home_lenden"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="Icon 2"
+                android:scaleType="centerInside"
+                android:src="@drawable/transction" />
+
+            <ImageView
+                android:id="@+id/home_cart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="Icon 3"
+                android:scaleType="centerInside"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:contentDescription="Icon 4"
+                android:scaleType="centerInside"
+                android:src="@drawable/profile_bottom" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
